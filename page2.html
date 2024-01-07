@@ -1,1 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <style>
+      @keyframes slowdown {
+        0% { transform: translateX(0); opacity: 0; }
+        50% { transform: translateX(60px); opacity: 0.4; }
+        100% { transform: translateX(30px); opacity: 0.8; }
+        100% { transform: translateX(0px); opacity: 1; }
+      }
+  
+      .maintext {
+        animation: slowdown 3s ease-in-out; /* Adjust the duration as needed */
+        transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55); /* Custom easing for a smooth slowdown */
+      }
+      .ourservices{
+        animation: slowdown 3s ease-out;/* Adjust the duration as needed */
+        transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55); /* Custom easing for a smooth slowdown */
+      }
+    @font-face {
+        font-family: mLight;
+        src: url(fonts/Roboto-Light.ttf);
+    }
+    @font-face {
+        font-family: mBold;
+        src: url(fonts/Roboto-Bold.ttf);
+    }
+    @font-face {
+        font-family: mBlack;
+        src: url(fonts/Roboto-Black.ttf);
+    }
+    @font-face {
+        font-family: mItalic;
+        src: url(fonts/Roboto-Italic.ttf);
+    }
+    @font-face {
+        font-family: mRegular;
+        src: url(fonts/Roboto-Regular.ttf);
+    }
+    @font-face {
+        font-family: mMedium;
+        src: url(fonts/Roboto-Medium.ttf);
+    }
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: mMedium;
+        
+    }
+    body {
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh; /* Set minimum height to 100% of viewport height */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Make it a column layout */
+}
 
+ </style>
+
+  </head>
+  <div>
+  <body style="background-color: black;">
+    <header class="header">
+      <a href="#" class="logo"><img src="logo/fab shrinked.png"></a>
+      <nav class="navbar">
+        <a href="index.html" class="navi">Home</a>
+        <a href="page2.html" class="navi">Services</a>
+        <a href="page3.html" class="navi">About</a>
+        <a href="page4.html" class="navi">Case Studies</a>
+        <a href="page5.html"><button class="button">CONTACT</button></a>
+      </nav>
+    </header>
+    <!--animation-->
+    <div class="anim" style="background-color: #4a02ee;"></div>
+    <div class="anim" style="top: 65%; background-color: #4a02ee;"></div>
+    <div class="anim" style="top: 35%; background-color: #4a02ee;"></div>
+    <div class="maintext">
+      <div class="animated-figure"></div>
+      <h1 class="display-3">COME TO US WITH AN IDEA<br>AND WE’LL BRING IT TO LIFE.</h1>
+    </div>
+    <div class="secondmain">
+      <p style="font-family: mLight;"> Our team is dedicated to bringing your<br> concepts to life, ensuring a seamless<br>and innovative execution. </p>
+    </div>
+    <div class="firstbox">
+      <div class="vyn">
+      <h1 class="h1 text-white">Our Services</h1>
+      <p class="h5" style="font-family: mRegular; color:gray">Delivering impeccable websites is what we are responsible for,including designing,<br> coding and modifying websites, from layout to function and according to clients specifications.<br> We strive to create visually appealing sites that feature user-friendly<br> design and clear navigation. From back-end to front- end website development, we’ll<br> leave you with a product that’s functional, effective and engaging to your end-users.<br><br>
+
+        This is how we create web whose power comes from their own strengths.</p>
+        <div class="container" style="gap:40px">
+          <div class="item" id="id5"></div>
+          <div class="item" id="id6"></div>
+        </div>
+    </div>
+    <div class="vyn">
+      <h1 class="h1 text-white">E-COMMERCE SOLUTIONS</h1>
+      <p class="h5" style="font-family: mRegular; color:gray">Creating user flows, wireframes, prototypes and mockups.<br>Translating requirements into style guides, design systems, design patterns<br> and attractive user interfaces. We design digital products in a<br>preference-tailored manner like never before.</p>
+        <div class="container" style="gap:40px">
+          <div class="item" id="id7"></div>
+          <div class="item" id="id8"></div>
+        </div>
+        <div class="vyn">
+          <h1 class="h1 text-white">MOBILE APPS</h1>
+          <p class="h5" style="font-family: mRegular; color:gray;">Customize your mobile app to be on track with the digital era of marketing and usage<br>in order to help your business thrive and reach the peak of brand awareness.<br>These software applications are designed to run on mobile devices,<br>such as a smartphone or tablet computer.</p>
+          <p class="h5" style="font-family: mRegular; color:gray; margin-top: 30px;">NO SURPRISES, NO SURPRISES, NO LIMITATIONS.</p>
+            <div class="container" style="gap:40px">
+              <div class="item" id="id9"></div>
+              <div class="item" id="id10"></div>
+            </div>
+            <div class="text-before-collection">
+              <p class="h5 text-white">How we work</p>
+              <p class="h2 text-uppercase text-white" style="margin-top: 60px">here's why you should consider choosing us</p>
+            </div>
+            <div class="collection">
+              <img class="imgs" src="images/coll1.png" alt="Our team working">
+              <div class="textbox">
+                <p class="h4" style="font-family: mLight; color:rgb(100, 100, 100);">01</p>
+                <div class="hrr"></div>
+                <div class="h3 text-white" style="font-family: mLight;">Discovery and Planning</div>
+                <p class="h4" style="font-family: mLight; font-size: 20px; color:rgb(100, 100, 100);">The company starts by having discussions with the client to<br>understand their needs,
+                   objectives, and target audience.<br>They gather all relevant information about the 
+                  project's<br> scope, goals, and timeline. Once the requirements<br> are clear, the development and design team collaborates<br>
+                  to create a detailed project plan.<br>This plan outlines the project's milestones,
+                  <br>deliverables, technologies to be used, and the estimated<br>
+                  timeline for each phase of the project.</p>
+              </div>
+              <div class="collection">
+                <img class="imgs" src="images/coll2.png" alt="Our team working">
+                <div class="textbox">
+                  <p class="h4" style="font-family: mLight; color:rgb(100, 100, 100);">02</p>
+                  <div class="hrr"></div>
+                  <div class="h3 text-white" style="font-family: mLight;">Development and Design</div>
+                  <p class="h4" style="font-family: mLight; font-size: 20px; color:rgb(100, 100, 100);">The design team begins creating the visual aspects of the website, which may include wireframes and mockups to present the layout and design to the client for approval. After the design is approved, the development team starts building the actual website or web application. They use various programming languages, frameworks, and tools to develop the frontend and backend of the site. The development process involves coding, testing, and debugging to ensure the site functions correctly and is free of errors.</p>
+                </div>
+                <div class="collection">
+                  <img class="imgs" src="images/coll3.jpg" alt="Our team working">
+                  <div class="textbox">
+                    <p class="h4" style="font-family: mLight; color:rgb(100, 100, 100);">03</p>
+                    <div class="hrr"></div>
+                    <div class="h3 text-white" style="font-family: mLight;">Development and Design</div>
+                    <p class="h4" style="font-family: mLight; font-size: 20px; color:rgb(100, 100, 100);">The design team begins creating the visual aspects of the website, which may include wireframes and mockups to present the layout and design to the client for approval. After the design is approved, the development team starts building the actual website or web application. They use various programming languages, frameworks, and tools to develop the frontend and backend of the site. The development process involves coding, testing, and debugging to ensure the site functions correctly and is free of errors.</p>
+                  </div>
+            </div>
+    </div>
+    </div>
