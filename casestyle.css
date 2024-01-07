@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;0,900;1,100;1,800;1,900&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+}
+:root{
+    --primary-color: #000000;
+    --secondary-color: #ffffff;
+    --neon-purple-color: #c32aff;
+    --orange: #FFA500;
+
+}
+section{
+    padding: 4.5rem 0 1.5rem;
+}
+
+
+
+body{ background-color: var(--primary-color);
+    min-height: 100vh;}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 350px;
+    background: rgb(3, 3, 3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+  position: absolute;
+  height: auto;
+  left: 40px;
+  margin-top: 15px;
+  transition: 0.5s;
+}
+.logo:hover{
+  left: 30px;
+}
+.navbar a.navi{
+    position: relative;
+    font-size: 18px;
+    color:white;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 60px;
+    padding-right: 90px;
+}
+.navbar a.navi:hover{
+    color:rgba(255, 255, 255, 0.87)
+}
+
+.navbar a.navi::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    transition: 0.4s;
+
+}
+.navbar a.navi:hover::before{
+    width: 45%;
+    background-color: rgba(255, 255, 255, 0.87);
+}
+.button{
+    width: 90px;
+    height: 40px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 1s;
+    border: none;
+    font-size: 13px;
+}
+.button:hover{
+    background-color: rgba(0, 0, 0, 0);
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+    color:white;
+}
+
+.box{
+    box-sizing: flex;
+    font-size: 2rem;
+    background-color: #111;
+    height: 600px;
+    width: 1450px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+    margin-top: 100px;
+    padding: 50px;
+}
+
+.boxmsg{
+    font-size: 20px;
+    color: aliceblue;
+    align-items: absolute;
+    
+}
+
+.img3{
+    float:right;
+    width: 43%;
+    border-radius: 30px;
+}
