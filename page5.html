@@ -117,3 +117,75 @@
         </form>
       </section>
     </div>
+</div>
+    <div class="firstbox" style="margin-top:200px;">
+      <div class="vyn">
+      <h1 class="h1 text-white" style="margin-right: 300px;;">Extras</h1>
+      <p class="h5" style="font-family: mRegular; color:gray; text-align: left;">You could click <a href="https://www.techtarget.com/searchapparchitecture/definition/source-code" target="_blank" id="new-tab">here</a> to find our sources.</p>
+    </div>
+    <div class="container" style="gap:30px">
+      <div class="item" id="id9" style="border: inset rgb(44, 44, 44);"></div>
+      <div class="item" id="id10" style="border: inset rgb(44, 44, 44);"></div>
+    </div>
+    <p class="h5" style="font-family: mRegular; color:gray; text-align: left;">Here's is some relaxing jazz music if you'd like to listen while scrolling our webpage!</p>
+    <audio controls class="audio">
+      <source src="media/jazz1.mp3" type="audio/mp3">
+      Your browser does not support the audio element.
+    </audio>
+    <p class="h5" style="font-family: mRegular; color:gray; text-align: left;">You could always choose classical music if you dont like jazz.</p>
+    <audio controls class="audio">
+      <source src="media/classical.mp3" type="audio/mp3">
+      Your browser does not support the audio element.
+    </audio>
+    <h1 class="h1 text-white" style="margin-right: 300px; margin-top: 50px;">Drag the things you like.</h1>
+    <p class="h5" style="font-family: mRegular; color:gray; text-align: left;">We want your opinion,what should we work more on?</p>
+  </div>
+    <div class="dragndrop">
+      <div class="drag-container">
+          <div id="left">
+            <div class="list" draggable="true"><img src="icons/ddicon.png">Front End</div>
+            <div class="list" draggable="true"><img src="icons/ddicon.png">Back End</div>
+            <div class="list" draggable="true"><img src="icons/ddicon.png">Full Stack</div>
+            <div class="list" draggable="true"><img src="icons/ddicon.png">State Management</div>
+          </div>
+          <div id="right"></div>
+      </div>
+    </div>
+    <p class="h5" style="font-family: mRegular; color:gray; margin-left: 350px; margin-top: 60px;">Ever wanted a super strong password?</p>
+      <div class="drag-container">
+        <div class="box">
+          <h2>Random Password Generater</h2>
+          <input class="inp"  type="text" name="" placeholder="Create password" id="password" readonly>
+          <table>
+            <th><div id="button" class="btn1"onclick="genPassword()">Generate</div></th>
+            <th><a  id="button" class="btn2" onclick="copyPassword()">Copy</a></th>
+         </table>
+        </div>
+      </div>
+      <p class="h5" style="font-family: mRegular; color:gray; margin-left: 350px; margin-top: 60px;">Try out our stopwatch.</p>
+      <div class="drag-container">
+        <div class= "cont-stop">
+          <p class="pstop">Time is gold!</p>
+          <div id= "time">
+              <span class= "digits" id= "hour">
+                00</span>
+              <span class= "text" > Hr </span>
+              <span class= "digits" id= "minute">
+                00</span>
+              <span class= "text"> Min </span>
+              <span class= "digits" id= "second">
+                00</span>
+              <span class= "text"> Sec </span>
+              <span class= "digits" id= "count">
+                00</span>
+          </div>
+          <div id= "buttons">
+              <button class= "btn1" id= "start">
+                Start </button>
+              <button class= "btn2" id= "stop">
+                Stop </button>
+              <button class= "btn3" id= "reset">
+                Reset </button>
+          </div>
+      </div>
+      </div>
