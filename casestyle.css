@@ -116,3 +116,52 @@ body{ background-color: var(--primary-color);
     width: 43%;
     border-radius: 30px;
 }
+
+.maintext{
+    font-family: mRegular;
+    padding: 350px 350px 0px;
+    color: white;
+    font-size: 35px;
+    float: left;
+    }
+
+.anim{
+    position: absolute;
+    top: 50%;
+    right: 500px;
+    transform: translateY(-50%);
+    width: 100px;
+    height: 100px;
+    background-color: #4BD5D5;
+    border-radius: 50%;
+    animation: moveAnimation 2s linear infinite alternate;
+} 
+.vyn{
+    margin-top: 150px;
+}
+
+@keyframes moveAnimation {
+    from {
+      transform: translateY(-50%) translateX(0);
+    }
+    to {
+      transform: translateY(-50%) translateX(100px);
+    }
+  }
+  
+  .button{
+    width: 90px;
+    height: 40px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 1s;
+    border: none;
+    font-size: 13px;
+}
+.button:hover{
+    background-color: rgba(0, 0, 0, 0);
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+    color:white;
+}
