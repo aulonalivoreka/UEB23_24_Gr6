@@ -189,3 +189,163 @@
           </div>
       </div>
       </div>
+ <p class="h5" style="font-family: mRegular; color:gray; margin-left: 350px; margin-top: 60px;">We prepared a to do list for you!</p>
+      <div class="drag-container">
+        <div class="todo-con">
+          <h1 class="h1 text-black" style="font-family: mBold; margin-bottom: 70px;">To-Do List</h1>
+          <div id="taskList">
+              <!-- Task items will be dynamically added here -->
+          </div>
+          <input type="text" id="newTask" placeholder="Your Task" style="font-family: mBold;">
+          <button id="todobut" onclick="addTask()">Add Task</button>
+      </div>
+      </div>
+      <!--Expensee-->
+      <p class="h5" style="font-family: mRegular; color:gray; margin-left: 350px; margin-top: 60px;">Simple task runner.</p>
+      <div class="drag-container">
+        <div class="exp-cont">
+          <h1>Expense Tracker</h1>
+          <div>
+              <button class="butigr" onclick="filterExpenses('Groceries')">Filter Groceries</button>
+              <button class="butigr" onclick="filterExpenses('Dining')">Filter Dining</button>
+              <button class="butigr" onclick="filterExpenses('Transportation')">Filter Transportation</button>
+              <button class="butigr" onclick="displayExpenses()">Show All</button>
+          </div>
+          <div id="expenseList">
+          </div>
+          <div id="expenseSummary">
+          </div>
+      </div>
+          <div id="expenseSummary">
+          </div>
+      </div>
+      <p class="h5" style="font-family: mRegular; color:gray; margin-left: 350px; margin-top: 60px; margin-bottom: 50px;">A quick quiz to keep you entertained.</p>
+      </div>
+      <!-- Quiz container-->
+      <div class="quiz-container">
+        <h1 class="quiz-title">Interactive Quiz</h1>
+        <div class="quiz-question-container">
+            <p id="quiz-question">Question will go here</p>
+        </div>
+        <div class="quiz-answers-container" id="quiz-answers">
+        </div>
+        <button class="quiz-button" id="submitAnswer">Submit Answer</button>
+        <button class="quiz-button" id="nextQuestion">Next Question</button>
+        <div class="quiz-result-container" id="quiz-result">
+        </div>
+    </div>
+      
+      
+      <!--Throw-->
+      <p class="h5" style="font-family: mRegular; color:gray; margin-right: 950px; margin-top: 60px; margin-bottom: 50px; float: left;">Calculate your expenses.</p>
+      <div class="drag-container" style="margin-bottom: 0px;">
+        <form id="expense-form">
+          <input type="text" id="item-name" placeholder="Item Name" required />
+          <input type="number" id="amount" placeholder="Amount" required />
+          <input type="date" id="expense-date" required />
+          <input type="text" id="category" placeholder="Category" required />
+          <button type="submit">Add Expense</button>
+        </form>
+        <div id="error-message"></div>
+        <div id="expenses-list"></div>
+      </div>
+    </div>
+  </div>
+
+  <!--footer-->
+
+  <section class="footer">
+    <div class="footer-row">
+      <div class="footer-col">
+        <h4>Info</h4>
+        <ul class="links">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Compressions</a></li>
+          <li><a href="#">Customers</a></li>
+          <li><a href="#">Service</a></li>
+          <li><a href="#">Collection</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul class="links">
+          <li><a href="#">Latest Designs</a></li>
+          <li><a href="#">Themes</a></li>
+          <li><a href="#">Popular Designs</a></li>
+          <li><a href="#">Art Skills</a></li>
+          <li><a href="#">New Uploads</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul class="links">
+          <li><a href="#">Customer Agreement</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4></h4>
+        <p>
+          Subscribe to our newsletter for a weekly dose
+          of news, updates, helpful tips, and
+          exclusive offers.
+        </p>
+        <form action="#">
+          <input type="text" placeholder="Your email" required>
+          <button type="submit">SUBSCRIBE</button>
+        </form>
+        <div class="icons">
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-linkedin"></i>
+          <i class="fa-brands fa-github"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+    
+
+
+
+  
+<script>
+  let lists = document.getElementsByClassName("list");
+  let rightBox = document.getElementById("right");
+  let lefttBox = document.getElementById("left");
+
+  for(list of lists){
+      list.addEventListener("dragstart",function(e){
+        let selected = e.target;
+        rightBox.addEventListener("dragover",function(e){
+          e.preventDefault();
+        });
+          rightBox.addEventListener("drop",function(e){
+            rightBox.appendChild(selected);
+            selected=null;
+          });
+          lefttBox.addEventListener("dragover",function(e){
+          e.preventDefault();
+        });
+          lefttBox.addEventListener("drop",function(e){
+            lefttBox.appendChild(selected);
+            selected=null;
+          });
+      })
+  }
+</script>
+</html>
