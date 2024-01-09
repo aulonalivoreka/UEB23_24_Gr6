@@ -486,3 +486,350 @@ body {
 .input-box label {
   color: #333;
 }
+.form :where(.input-box input, .select-box) {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  outline: none;
+  font-size: 1rem;
+  color: #707070;
+  margin-top: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+.input-box input:focus {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+.form .column {
+  display: flex;
+  column-gap: 15px;
+}
+.form .gender-box {
+  margin-top: 20px;
+}
+.gender-box h3 {
+  color: #333;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+.form :where(.gender-option, .gender) {
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+  flex-wrap: wrap;
+}
+.form .gender {
+  column-gap: 5px;
+}
+.gender input {
+  accent-color: rgb(19, 0, 112);
+}
+.form :where(.gender input, .gender label) {
+  cursor: pointer;
+}
+.gender label {
+  color: #ffffff;
+}
+.address :where(input, .select-box) {
+  margin-top: 15px;
+}
+.select-box select {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  color: #707070;
+  font-size: 1rem;
+  border-radius: 6px;
+}
+.form button {
+  height: 55px;
+  width: 100%;
+  color: #000000;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 30px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  background: rgb(255, 255, 255);
+}
+#new-tab{
+    background-color: #ff0080;
+    color: black ;
+    text-decoration: none;
+}
+.audio{
+    width: 80%;
+    max-width: 500px;
+    filter: grayscale(100%);
+    margin-left: 300px;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    transition: 0.5s;
+}
+.audio:hover{
+    max-width: 600px;
+}
+/*Responsive*/
+@media screen and (max-width: 500px) {
+  .form .column {
+    flex-wrap: wrap;
+  }
+  .form :where(.gender-option, .gender) {
+    row-gap: 15px;
+  }
+}
+.box{
+    background-color: white;
+    padding-top: 30px;
+    padding: 30px;
+  }
+  .box h2{
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 26px;
+    color: #000000;
+  }
+.inp {
+    padding: 20px;
+    user-select: none;
+    height: 50px;
+    width: 400px;
+    border-radius: 6px;
+    border: none;
+    border: 2px solid #000000;
+    outline: none;
+    font-size: 22px;
+    }
+    #button {
+        font-size: 15px;
+        margin-top: 40px;
+        border: 2px solid #ffffff;
+        width: 155px;
+        height: 50px;
+        text-align: center;
+        background-color:   #1f1f1f;
+        display: flex;
+        color: rgb(255, 255, 255);
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        border-radius: 5px;  
+        text-decoration: none;
+        font-family: mRegular;
+        transition: 0.4s;
+      }
+      
+       .btn2{
+         margin-left: 85px
+       }
+      
+      #button:hover {
+        border: 2px solid #000000;
+        color: rgb(0, 0, 0);
+        background-color: rgb(255, 255, 255);
+      }
+   
+   input::placeholder{
+     font-size: 23px;
+    } 
+/*Stopwatch*/
+.cont-stop {
+    background-color: rgb(36, 36, 36);
+    height: 350px;
+    width: 550px;
+    text-align: center;
+}
+.pstop {
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.digits {
+    font-size: 70px;
+    color: rgb(255, 255, 255);
+}
+.text {
+    font-size: 20px;
+    color: hotpink;
+    font-weight: bold;
+}
+#buttons {
+    margin-top: 35px;
+}
+.btn1, .btn2, .btn3 {
+    width: 90px;
+    height: 50px;
+    padding: 8px 5px 8px 2px;
+    margin: 10px 25px 20px 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: 0.7s;
+    color: rgb(0, 0, 0);
+    font-weight: 550;
+    border: 0;
+    background-color: #b4b4b4;
+}
+#start:hover, #stop:hover, #reset:hover  {
+    background-color: white;
+}
+/*expcont*/
+
+.exp-cont {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.expense {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    background-color: #e0e0e0;
+    border-radius: 4px;
+    margin-bottom: 5px;
+}
+
+.butigr{
+    background-color: #292929;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.butigr:hover{
+    background-color: black;
+}
+
+/*  output */
+.quiz-container {
+    background-color: white;
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin: 0 auto;
+}
+
+.quiz-title {
+    margin-bottom: 20px;
+}
+
+.quiz-question-container {
+    margin-bottom: 20px;
+}
+
+.quiz-answers-container {
+    margin-bottom: 20px;
+}
+
+.quiz-button {
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px auto; 
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: block; 
+}
+
+.quiz-button:hover {
+    background-color: #1f1f1f;
+}
+
+.quiz-result-container {
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*throw*/
+#expense-form {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #222; /* Dark background for the form */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  }
+  
+  #expense-form input[type="text"],
+  #expense-form input[type="number"],
+  #expense-form input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  #expense-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff0080; /* Bright pink button */
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  #expense-form button:hover {
+    background-color: #ff3399; /* Lighter pink on hover */
+  }
+  
+  #error-message {
+    color: #ff0080; /* Bright pink error messages */
+    text-align: center;
+    margin: 10px 0;
+  }
+  
+  #expenses-list {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #222; /* Dark background for the list */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  }
+  
+  #expenses-list p {
+    border-bottom: 1px solid #333; /* Subtle separators for items */
+    padding: 8px 0;
+    color: #fff; 
+  }
