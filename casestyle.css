@@ -204,3 +204,46 @@ body{ background-color: var(--primary-color);
     border-color: white;
     color:white;
 }
+
+.devider{
+    width: 50%;
+    height: 1px;
+    background-color: var(--secondary-color);
+    margin-top: 1px;
+    margin-bottom: 1px;
+    display: inline-block;
+
+}
+
+.flip-box {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 1px;
+    
+}
+
+  .flip-box-inner {
+    position: center;
+    width: 1200px;
+    margin: 14rem;
+    height: 400px;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+
+ .flip-box-front {
+    background-color: #bbb;
+    color: black;
+  }
+
+.flip-box-back {
+    background-color: black;
+    color: white;
+    transform: rotateY(180deg);
+  }
