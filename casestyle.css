@@ -1,4 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;0,900;1,100;1,800;1,900&display=swap');
+@font-face {
+  font-family: mLight;
+  src: url(fonts/Roboto-Light.ttf);
+}
+@font-face {
+  font-family: mBold;
+  src: url(fonts/Roboto-Bold.ttf);
+}
+@font-face {
+  font-family: mBlack;
+  src: url(fonts/Roboto-Black.ttf);
+}
+@font-face {
+  font-family: mItalic;
+  src: url(fonts/Roboto-Italic.ttf);
+}
+@font-face {
+  font-family: mRegular;
+  src: url(fonts/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: mMedium;
+  src: url(fonts/Roboto-Medium.ttf);
+}
+
+
 *{
     font-family: 'Poppins', sans-serif;
     margin:0;
