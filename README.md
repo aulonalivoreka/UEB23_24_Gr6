@@ -1,4 +1,4 @@
-## Project in subject Web programming 1
+## Project in subject Web Programming 1
 
 Creating a website (HTML5, CSS, CSS3, Bootstrap, JavaScript and JQuery)
 
