@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;0,900;1,100;1,800;1,900&display=swap');
+
 @font-face {
   font-family: mLight;
   src: url(fonts/Roboto-Light.ttf);
@@ -25,22 +25,12 @@
 }
 
 
-*{
-    font-family: 'Poppins', sans-serif;
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
-    scroll-padding-top: 2rem;
-    scroll-behavior: smooth;
-}
-:root{
-    --primary-color: #000000;
-    --secondary-color: #ffffff;
-    --neon-purple-color: #c32aff;
-    --orange: #FFA500;
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: mMedium;
+  
 }
 
 @keyframes slowdown {
@@ -55,14 +45,20 @@
   transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55); /* Custom easing for a smooth slowdown */
 }
 
-section{
-    padding: 4.5rem 0 1.5rem;
+
+:root{
+    --primary-color: #000000;
+    --secondary-color: #ffffff;
+    --neon-purple-color: #c32aff;
+    --orange: #FFA500;
+
 }
 
 
 
+
 body{ background-color: var(--primary-color);
-    min-height: 100vh;}
+}
 .header{
     position: fixed;
     top: 0;
@@ -74,6 +70,10 @@ body{ background-color: var(--primary-color);
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+}
+
+.navbar{
+    color: #000000;
 }
 .logo{
   position: absolute;
@@ -113,34 +113,22 @@ body{ background-color: var(--primary-color);
     width: 45%;
     background-color: rgba(255, 255, 255, 0.87);
 }
-.button{
-    width: 90px;
-    height: 40px;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: 1s;
-    border: none;
-    font-size: 13px;
-}
-.button:hover{
-    background-color: rgba(0, 0, 0, 0);
-    border-style: solid;
-    border-width: 2px;
-    border-color: white;
-    color:white;
-}
+  
 
 .box{
     box-sizing: flex;
     font-size: 2rem;
     background-color: #111;
     height: 600px;
-    width: 1450px;
-    margin-left: 100px;
+    width: 90%;
+    margin-left: 100px ;
     margin-right: 100px;
     margin-bottom: 100px;
     margin-top: 100px;
     padding: 50px;
+    display: block;
+    align-items: center;
+
 }
 
 .boxmsg{
@@ -155,6 +143,77 @@ body{ background-color: var(--primary-color);
     width: 43%;
     border-radius: 30px;
 }
+.devider{
+    width: 50%;
+    height: 1px;
+    background-color: var(--secondary-color);
+    margin-top: 1px;
+    margin-bottom: 1px;
+    display: inline-block;
+
+}
+
+.flip-box {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 1px;
+    
+}
+
+/* This container is needed to position the front and back side */
+  .flip-box-inner {
+    position: center;
+    width: 1200px;
+    margin: 14rem;
+    height: 400px;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+  
+/* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+  
+/* Position the front and back side */
+  .flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-box-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-box-back {
+    background-color: black;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+
+  #flip{
+    padding: 5px;
+    text-align: center;
+    width: 1450px;
+    height: 50px;
+    border: solid 2px #555;
+    border-radius: 15px;
+    margin-left: 100px;
+    
+
+  }
+#panel {
+    padding: 50px;
+    display: none;}  
 
 .maintext{
     font-family: mRegular;
@@ -163,7 +222,11 @@ body{ background-color: var(--primary-color);
     font-size: 35px;
     float: left;
     }
-
+.secondmain{
+    padding:25px 350px 0px;
+    color: rgb(163, 163, 163);
+    font-size: 25px;
+    border-bottom: 300px;}
 .anim{
     position: absolute;
     top: 50%;
@@ -171,7 +234,7 @@ body{ background-color: var(--primary-color);
     transform: translateY(-50%);
     width: 100px;
     height: 100px;
-    background-color: #4BD5D5;
+    background-color: #FFC107;
     border-radius: 50%;
     animation: moveAnimation 2s linear infinite alternate;
 } 
@@ -205,45 +268,159 @@ body{ background-color: var(--primary-color);
     color:white;
 }
 
-.devider{
-    width: 50%;
-    height: 1px;
-    background-color: var(--secondary-color);
-    margin-top: 1px;
-    margin-bottom: 1px;
-    display: inline-block;
+.accordion{
+  display: block;
+  align-items: center;
+  margin: 60px auto;
+  margin-right: 100px;
+  width: 600px;
+
+}
+.accordion li{
+  list-style: none;
+  width: 100%;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 6px 6px 10px -1px rgba(65, 65, 65, 0.15),
+              -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+  
+}
+
+.accordion li label{
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor:pointer;
+  color: var(--secondary-color);
 
 }
 
-.flip-box {
-    background-color: transparent;
-    width: 300px;
-    height: 200px;
-    border: 1px;
-    
+label::before {
+  content: '+';
+  margin-right: 10px;
+  font-size: 24px;
+  font-weight: 600;
+
 }
 
-  .flip-box-inner {
-    position: center;
-    width: 1200px;
-    margin: 14rem;
-    height: 400px;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
+input[type="radio"]{
+  display: none;
 }
 
-.flip-box:hover .flip-box-inner {
-    transform: rotateY(180deg);
-  }
+.accordion .content{
+  color: #555;
+  padding: 0 10px;
+  line-height: 26px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s, padding 0.5s ;
+}
 
- .flip-box-front {
-    background-color: #bbb;
-    color: black;
-  }
+.accordion input[type="radio"]:checked ~.content{
+  max-height: 1000px;
+  padding: 10px 10px 20px;
+}
 
-.flip-box-back {
-    background-color: black;
-    color: white;
-    transform: rotateY(180deg);
-  }
+.accordion input[type="radio"]:checked ~ label::before{
+  content: '-';
+}
+
+.footer {
+  margin-left: 12rem;
+  margin-top: auto; 
+  background: #0f0f0f;
+  border-radius: 6px;
+  max-width: 1280px;
+  width: 100%; 
+}
+.footer .footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 3.5rem;
+  padding: 60px;
+}
+.footer-row .footer-col h4 {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-left: 35px;
+}
+.footer-row .footer-col {
+  text-align: left;
+}
+.footer-col .links {
+  margin-top: 20px;
+}
+.footer-col .links li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+.footer-col .links li a {
+  text-decoration: none;
+  color: #bfbfbf;
+}
+.footer-col .links li a:hover {
+  color: #fff;
+}
+.footer-col p {
+  margin: 20px 0;
+  color: #bfbfbf;
+  max-width: 300px;
+}
+.footer-col form {
+  display: flex;
+  gap: 5px;
+}
+.footer-col input {
+  height: 40px;
+  border-radius: 6px;
+  background: none;
+  width: 100%;
+  outline: none;
+  border: 1px solid #ececec ;
+  caret-color: #fff;
+  color: #fff;
+  padding-left: 10px;
+}
+.footer-col input::placeholder {
+  color: #ccc;
+}
+ .footer-col form button {
+  background: #fff;
+  outline: none;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+.footer-col form button:hover {
+  background: #cecccc;
+}
+.footer-col .icons {
+  display: flex;
+  margin-top: 30px;
+  gap: 30px;
+  cursor: pointer;
+}
+.footer-col .icons i {
+  color: #afb6c7;
+}
+.footer-col .icons i:hover  {
+  color: #fff;
+}
+
+video{
+  margin-left: 20rem;
+  width: 60%;
+}
+
+.table1{
+  margin-left: 50rem;
+
+}
