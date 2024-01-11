@@ -196,6 +196,44 @@
           </div>
         </div>
       </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      <div class="container">
+        <div class="jumbotron text-center bg-black text-white">
+            <h1>Dynamic Table Add Row</h1>
+            <p>Add Row to Table and Delete</p>
+        </div>
+        <div class="row">
+            <div class="col-md-2 col-sm-6 col-6 p-2 ">
+                <input type="text" class="form-control" placeholder="Shëno Emrin" id="txtName" />
+            </div>
+            <div class="col-md-2 col-sm-6 col-6 p-2 ">
+                <input type="text" class="form-control " placeholder=" Ç'farë ushqimi të pëlqen" id="txtCity" />
+            </div>
+            <div class="col-md-2 col-sm-6 col-6 p-2 ">
+                <input type="text" class="form-control " placeholder="Ëmbëlsira e preferuar" id="txtMobile" />
+            </div>
+            <div class="col-md-2 col-sm-6 col-12 p-2">
+                <input type="button" id="btnAdd" class="btn btn-primary para" value="Add New" />
+            </div>
+        </div>
+        <div class="row pt-3">
+            <div class="col-md-12 col-sm-12 col-12 p-2 ">
+                <table id="tblData" class="table table-bordered table-hover table-striped">
+                    <thead>
+                        <tr>
+                            <th>Sr No</th>
+                            <th>Name</th>
+                            <th>City</th>
+                            <th>Mobile</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody> 
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
 
     <ul class="accordion">
         <li>
