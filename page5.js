@@ -92,12 +92,8 @@ var submitButton = document.getElementById('sub');
 
 // to do lista
 
-// JavaScript code for managing tasks
-
-// Array to store tasks
 var tasks = [];
 
-// Function to add a new task
 function addTask() {
     var newTaskInput = document.getElementById('newTask');
     var taskText = newTaskInput.value.trim();
@@ -108,24 +104,18 @@ function addTask() {
             text: taskText,
             completed: false
         };
-
-        // Add the task to the array
+     
         tasks.push(task);
-
-        // Update the task list
         updateTaskList();
 
-        // Clear the input field
         newTaskInput.value = '';
     }
 }
 
-// Function to update the task list
 function updateTaskList() {
     var taskListContainer = document.getElementById('taskList');
     taskListContainer.innerHTML = '';
 
-    // Loop through the tasks and create HTML elements for each
     tasks.forEach(function (task, index) {
         var taskItem = document.createElement('div');
         taskItem.classList.add('task');
@@ -154,25 +144,18 @@ function updateTaskList() {
     });
 }
 
-// Function to toggle task completion status
 function toggleTaskCompletion(index) {
     tasks[index].completed = !tasks[index].completed;
     updateTaskList();
 }
 
-// Function to remove a task
 function removeTask(index) {
     tasks.splice(index, 1);
     updateTaskList();
 }
 
-// Initial update of the task list
 updateTaskList();
 
-// expenses
-// JavaScript code for managing expenses
-
-// Array to store expenses
 var expenses = [
   { category: 'Groceries', amount: 50 },
   { category: 'Dining', amount: 30 },
@@ -180,7 +163,6 @@ var expenses = [
   // Add more expenses as needed
 ];
 
-// Function to display expenses
 function displayExpenses(expensesArray = expenses) {
   var expenseListContainer = document.getElementById('expenseList');
   expenseListContainer.innerHTML = '';
@@ -201,11 +183,9 @@ function displayExpenses(expensesArray = expenses) {
       expenseListContainer.appendChild(expenseItem);
   });
 
-  // After displaying expenses, also update the expense summary
   displayExpenseSummary(expensesArray);
 }
 
-// Function to filter expenses by category
 function filterExpenses(category) {
   var filteredExpenses = expenses.filter(function (expense) {
       return expense.category === category;
@@ -214,7 +194,6 @@ function filterExpenses(category) {
   displayExpenses(filteredExpenses);
 }
 
-// Function to calculate and display total expenses
 function displayExpenseSummary(expensesArray) {
   var expenseSummaryContainer = document.getElementById('expenseSummary');
   expenseSummaryContainer.innerHTML = '';
@@ -229,8 +208,6 @@ function displayExpenseSummary(expensesArray) {
   expenseSummaryContainer.appendChild(totalText);
 }
 
-
-//// Quizi
 document.addEventListener('DOMContentLoaded', function() {
     const quizData = [
         {
@@ -248,7 +225,6 @@ document.addEventListener('DOMContentLoaded', function() {
             answers: { a: "Atlantic Ocean", b: "Indian Ocean", c: "Arctic Ocean", d: "Pacific Ocean" },
             correctAnswer: "d"
         },
-        // Add more questions in the same format
     ];
 
     let currentQuestionIndex = 0;
@@ -316,9 +292,6 @@ document.addEventListener('DOMContentLoaded', function() {
     loadQuestion();
 });
 
-
-
-// Another function throw
 class Expense {
     constructor(name, amount, date, category) {
       this.name = name;
@@ -326,8 +299,7 @@ class Expense {
       this.date = new Date(date);
       this.category = category;
     }
-  
-    // Method to format the expense data
+ 
     format() {
       return `${this.name}: $${this.amount.toFixed(2)} on ${this.date.toDateString()}`;
     }
