@@ -8,7 +8,7 @@ Creating a website (HTML5, CSS, CSS3, Bootstrap,JavaScript and JQuery)
 
 ### Authors
 
-- [Aulona Livoreka (@aulonalivoreka)](https://github.com/aulonalivoreka)
+- [Aulona Livoreka (@aulonalivoreka)]
 - [Artina Qorrolli (@ArtinaQorrolli)](https://github.com/ArtinaQorrolli)
 - [Art Kelmendi (@artkelmendi)](https://github.com/artkelmendi)
 - [Blerton Ismaili (@Blertonismailii)](https://github.com/blertonismailii)
